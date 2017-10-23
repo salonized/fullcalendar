@@ -1,5 +1,5 @@
 /*!
- * FullCalendar v0.0.0
+ * FullCalendar v3.6.1-b2
  * Docs & License: https://fullcalendar.io/
  * (c) 2017 Adam Shaw
  */
@@ -19,7 +19,7 @@
 ;;
 
 var FC = $.fullCalendar = {
-	version: "0.0.0",
+	version: "3.6.1-b2",
 	// When introducing internal API incompatibilities (where fullcalendar plugins would break),
 	// the minor version of the calendar should be upped (ex: 2.7.2 -> 2.8.0)
 	// and the below integer should be incremented.
@@ -17200,7 +17200,7 @@ var TimeGrid = FC.TimeGrid = InteractiveDateComponent.extend(StandardInteraction
 		if (segs.length > 0) { // is the current time in view?
 			nodes.push($('<div class="fc-now-indicator fc-now-indicator-arrow"></div>')
 				.css('top', top)
-				.appendTo(this.el.find('.fc-content-skeleton')[0])[0]);
+				.appendTo(this.el.find('.fc-content-skeleton')[0]));
 		}
 
 		this.nowIndicatorEls = $(nodes);
